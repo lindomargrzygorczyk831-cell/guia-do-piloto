@@ -707,7 +707,7 @@ export default function Dashboard() {
               </div>
               <div className="space-y-1.5">
                 <label className="text-xs font-semibold text-slate-400 uppercase tracking-wider">WhatsApp / Celular</label>
-                <div className="relative"><span className="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-500"><Phone className="w-4 h-4" /></span><input type="text" placeholder="(00) 99999-0000" value={celular} onChange={(e) => setCellular(e.target.value)} className="w-full pl-9 pr-4 py-2.5 bg-slate-950/60 border border-slate-800 rounded-xl focus:outline-none text-sm text-slate-100 font-medium" /></div>
+                <div className="relative"><span className="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-500"><Phone className="w-4 h-4" /></span><input type="text" placeholder="(00) 99999-0000" value={celular} onChange={(e) => setCelular(e.target.value)} className="w-full pl-9 pr-4 py-2.5 bg-slate-950/60 border border-slate-800 rounded-xl focus:outline-none text-sm text-slate-100 font-medium" /></div>
               </div>
               <button type="submit" disabled={salvandoPerfil} className="w-full py-3 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold rounded-xl text-sm transition-all shadow-lg shadow-emerald-500/10 cursor-pointer">{salvandoPerfil ? 'Atualizando...' : 'Salvar Alterações'}</button>
             </form>
