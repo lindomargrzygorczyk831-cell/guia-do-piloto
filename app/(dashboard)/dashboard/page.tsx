@@ -200,7 +200,7 @@ export default function Dashboard() {
     }
 
     let csvContent = '\uFEFF' // Garante caracteres corretos no Excel (BOM UTF-8)
-    csvContent += 'DriverProfit - Relatório Financeiro Operacional\n'
+    csvContent += 'Guia do Piloto - Relatório Financeiro Operacional\n'
     csvContent += `Período Filtrado: ;${periodoAtivo.toUpperCase()}\n\n`
     csvContent += 'RESUMO OPERACIONAL\n'
     csvContent += `Faturamento Bruto:;R$ ${ganhosTotais.toFixed(2)}\n`
@@ -222,7 +222,7 @@ export default function Dashboard() {
     const url = URL.createObjectURL(blob)
     const link = document.createElement('a')
     link.setAttribute('href', url)
-    link.setAttribute('download', `DriverProfit_Relatorio_${periodoAtivo}.csv`)
+    link.setAttribute('download', `Guia do Piloto_Relatorio_${periodoAtivo}.csv`)
     link.style.visibility = 'hidden'
     document.body.appendChild(link)
     link.click()

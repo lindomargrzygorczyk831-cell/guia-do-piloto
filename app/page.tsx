@@ -44,7 +44,7 @@ export default function Login() {
             <Car className="w-6 h-6" />
           </div>
           <h1 className="text-2xl sm:text-3xl font-bold tracking-tight bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
-            DriverProfit
+            Guia do Piloto
           </h1>
           <p className="text-sm text-slate-400">
             A gestão financeira inteligente para motoristas de app
